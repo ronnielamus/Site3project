@@ -1,0 +1,89 @@
+/*Name: <input type="text" name="name">
+E-mail: <input type="text" name="email">
+Website: <input type="text" name="website">
+Comment: <textarea name="comment" rows="5" cols="40"></textarea>
+Radio buttons
+Gender:
+<input type="radio" name="gender" value="female">Female
+<input type="radio" name="gender" value="male">Male
+<input type="radio" name="gender" value="other">Other
+Form Element
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+Actual validation
+<?php
+// define variables and set to empty values
+$name = $email = $gender = $comment = $website = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = test_input($_POST["name"]);
+  $email = test_input($_POST["email"]);
+  $website = test_input($_POST["website"]);
+  $comment = test_input($_POST["comment"]);
+  $gender = test_input($_POST["gender"]);
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>*/
+const burger = document.querySelector('.burger');
+onst navSlide = () =>{
+
+const nav = document.querySelector('.nav-links');
+const navLinks= document.querySelectorAll('.nav-links li
+
+<button  type="button" onclick="toggler(nav-links)">hfhf</button>
+
+register page
+		if(isset($_POST["firstname"])&&isset($_POST['password'])){
+    $fname='Admin';
+    $lname='Admin';
+    $password='password';
+    $cPassword='password';
+    define('firstname',$fname);
+
+    $dbfname=strip_tags($_POST["firstname"]);
+    $dbpassword=strip_tags($_POST["password"]);
+     if($fname==''){
+     echo "<script>alert('Please enter Firstname')
+     </script>";
+    exit();
+    }
+    if($lname==''){
+     echo "<script>alert('Please enterlastname')
+     </script>";
+    exit();
+    }
+    if($password=='' && $password<6){
+     echo "<script>alert('Please enter  Password')</script>";
+
+    exit();
+    }
+     if($cPassword==''){
+     echo "<script>alert('Please enter Confirm Password')
+     </script>";
+
+    }
+
+    $check_name="select * from registerform where firstname='$fname'";
+    $run=mysqli_query($connection, "select * from registerform");
+
+     if(mysqli_num_rows($run)>0){
+    echo "<script>alert('Username $fname $lname already exits in our database. Please try with Another!') </script>";
+    }
+
+    elseif($password != $cPassword){
+       echo "<script>alert('passwords doesn't match')</script>";
+    }
+    else{
+          $query = "INSERT INTO `registerform` (fname,lname, password,cPassword) VALUES ('$fname','$lname', '$password', '$cPassword')";
+          $run1=mysqli_query($query ,$mysqli_db);
+
+    if($run1){
+    echo "<script>window.open('register.html','_self')</script>";
+}
+}
+}

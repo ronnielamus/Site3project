@@ -1,0 +1,467 @@
+*{
+	margin: 0;
+	padding: 0px;
+	box-sizing: border-box;
+}
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	background-color: brown;
+	font-weight: bold;
+	font-family:  -webkit-body;
+}
+.logo{
+	text-transform: uppercase;
+	color: white;
+	letter-spacing: 5px;
+	font-size: 17px;
+	font-family: -webkit-body;
+}
+.nav-links{
+	display: flex;
+	justify-content: space-around;
+	width: 35%;
+	/*add ons*/
+	line-height: 60px;
+	text-transform: none;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+.nav-links a{
+	color: white;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: bold;
+}
+.nav-links li{
+      list-style: none;
+}
+.nav-links li:hover{
+       background: #a3ada5;
+   }
+   .nav-links li.active{
+       background: rgb();
+   }
+.nav-links2{
+	display: none;
+}
+.hamburger div{
+	height: 5px;
+	width: 25px;
+	background-color: white;
+	margin: 5px;
+	transition: all 0.3s ease;
+}
+.hamburger{
+	display: none;
+	cursor: pointer;
+}
+
+  @media screen and (max-width: 1024px){
+  	.nav-links { 
+	width: 60%;
+ }
+ nav.nav-links2, .hamburger-btn{
+ 	display: none;
+
+ }
+  }
+ @media screen and (max-width: 768px){
+ 	body{
+ 		overflow-x: hidden;
+ 	}
+ 	.nav-links{
+ 		display: none;
+ 	}
+ 	.nav-links2, .hamburger-btn{
+ 		display: block;
+ 	}
+ 	   
+  	.nav-links{ 
+  	
+  	position: absolute;
+  	right: 0px;
+  	height: 92vh;
+  	top: 8vh;
+  	background-color: brown;
+  	display: flex;
+  	align-items: center;
+  	flex-direction: column;
+  	width: 50%;
+  	transform: translateX(100%);
+  	transition: transform 0.5s ease;
+  }
+    }
+   /* .img1{
+      background-image: url(img1.jpg);
+      background-size: 100% 100%;
+    }
+   /* .nav-links li{
+    	opacity: 0;
+    }
+    .burger{
+    	display: block;
+    }
+    .nav-active{
+    	transform: translateX( 0% );
+    }
+   /* @keyframes navLinkFade{
+    	from{
+               opacity: 0;
+               transform: translateX(50px);
+    	}
+    	to{
+             
+               opacity: 1;
+               transform: translateX(0px);
+    	}
+    }
+.toggle.line1{
+       transform: rotate(-45deg) translate(-5px,-6px);
+}
+.toggle.line2{
+	opacity: 0;
+}
+.toggle.line3{
+	  transform : rotate(45deg) translate(-5px,-6px);
+}
+}*/
+#btn-open{
+	display: block;
+	color: black;
+	font: 20px;
+	float: right;
+	margin-top: -23px; }
+
+ 
+.sidenav { 
+    height: 100%; 
+    width: 0; 
+    position: fixed;
+     z-index: 1; 
+     top: 0; left: 0;
+      background-color: #111; 
+      overflow-x: hidden; 
+      transition: 0.5s; 
+      padding-top: 60px; 
+      
+      } 
+.sidenav a { 
+       padding: 8px 8px 8px 32px; 
+        text-decoration: none; 
+        font-size: 25px;
+         color: #818181;
+          display: block; 
+          transition: 0.3s 
+        } 
+.sidenav a:hover, 
+.offcanvas a:focus{ 
+color: #f1f1f1; 
+} 
+.sidenav .closebtn { 
+    position: absolute; 
+    top: 0; right: 25px;
+     font-size: 36px;
+      margin-left: 50px;
+       } 
+ #main { 
+     transition: margin-left .5s; 
+     padding: 16px; 
+     text-color:;
+     
+     } 
+ @media screen and (max-height: 450px){ .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;} 
+  } 
+
+	  #main{
+	  	margin-left: 0px;
+	    position: absolute;
+	    top: -0.8rem;
+	    right: 0px;
+	    color: white;
+	  }
+
+	  #mySidenav{
+	  	left: unset;
+	  	right: 0;
+	  	background-color: brown;
+	  	font-family: -webkit-body;
+	  }
+	  .closebtn{
+	  	color: black;
+	  }
+	  /*Abouts page*/
+   .abouts
+    {
+      background-image: url(court.jpg);
+     /* background-size: 400px 300px;*/
+     
+     font-family: -webkit-body;
+    }
+       .abouts h3 {
+        background-color: brown;
+        font-size: 25px;
+        color: white;
+        padding: 3px;
+        letter-spacing:3px; 
+
+       }
+   .abouts p{
+      width: 900px;
+      padding-top: 12px;
+
+   }
+   .testimonials h4{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    letter-spacing:3px;
+    color: white;
+    font-family: -webkit-body;
+    background: brown;
+    text-transform: uppercase;
+
+   }
+    .about-bottom{
+      height: 10rem;
+      background-color: maroon;
+      color: white;
+      padding: 5px;
+      padding-top: 12px;
+      text-align: center;
+      
+
+    }
+   .about-box1{
+          display: flex;
+          margin: 10px;
+          padding: ;
+          border-style: ;
+          float: left;
+          position:;
+          top:;
+          left:;
+          padding: 80px 40px;
+          background-color: grey;
+           color: white;
+          width: 200px;
+          box-sizing: border-box;
+   }
+   .about-box2{
+       width: 200px;
+       float: left;
+       background: grey;
+       margin: 10px;
+       padding: 80px 40px;
+       border-radius: ;
+       color: white;
+   }
+   .about-box3{
+        width: 200px;
+        float: left;
+        background: grey;
+        margin: 10px;
+        padding: 80px 40px;
+         color: white;
+   }
+     .about-box4{
+        width: 200px;
+        float: left;
+        background: grey;
+        margin: 10px;
+        padding: 80px 40px;
+         color: white;
+   }
+     .about-box5{
+        width: 200px;
+        float: left;
+        background: grey ;
+        margin: 10px;
+        padding: 80px 40px;
+         color: white;
+   }
+     .about-box6{
+        width: 200px;
+        float: left;
+        background: grey ;
+        margin: 10px;
+        padding: 80px 40px;
+         color: white;
+   }
+     .about-box3{
+        width: 200px;
+        float: left;
+        background: grey ;
+        margin: 15px;
+        padding: 80px 40px;
+   }
+
+    .submit{
+    	/*text-align: right;*/
+    	color: rgb(0,0,0.72);
+    }
+    /*The Registration page*/
+    .register{
+    	background-image: url(project3.jpg);
+    	background-size: cover;
+    	margin: 0;
+    	padding: 0;
+    	font-family: sans-serif;
+
+
+    }
+    #registration{
+    	margin: 10px;
+    	padding-bottom: 20px;
+    	border-radius: 1em 4em 1em 4em;
+    	border-color: brown;
+    }
+    h2{
+    	margin: 0px;
+    	padding: 0 0 20px;
+    	color: #fff;
+    	text-align: center;
+    }
+    .registerBox
+    {
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	padding: 80px 40px;
+    	transform: translate(-50%,-50%);
+    	background: rgba(0,0,0,.5);
+    	height: 550px;
+    	width: 400px;
+    	box-sizing: border-box;
+    }
+ 
+    .registerBox input
+    {
+    	width: 100%;
+    	margin-bottom: 20px;
+    }
+    .registerBox input[type="text"],
+    .registerBox input[type="password"]
+    {
+    	border: none;
+    	outline: none;
+    	border-bottom: 1px solid #fff;
+    	background: transparent;
+    	margin: 10px;
+    	font-size: 16px;
+    	color: #fff;
+
+
+    }
+    .registerBox p
+    {
+    	margin: 0;
+    	padding: 0;
+    	color: #fff;
+    	font-weight: bold;
+    }
+
+    .registerBox input[type="submit"]
+    {
+    	border: none;
+    	outline: none;
+    	color: #fff;
+    	background: maroon;
+    	border-radius: 20px;
+    	height: 40px;
+    	cursor: pointer;
+    }
+
+    .registerBox input[type="submit"]:hover
+    {
+    	background: #ddd164;
+    	color: black;
+    }
+    .dropBox
+    {
+    	border-radius: 10px;
+    	padding: 0px;
+    	margin-top: 10px;
+    	margin-bottom: 40px;
+    }
+ /*Contact me page*/
+    #contact-box1{
+    font-size: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  background-clip: content-box; 
+  text-transform: uppercase;
+  color: white;
+  font-family: -webkit-body;
+  }
+   #contact-box1 p{
+    text-align: center;
+    font-size: 15px;
+    display: block;
+
+
+   }
+  .contact-box2{
+    position: relative;
+      top: 70px;
+      left: 25%;
+      padding: 80px 40px;
+      height: 550px;
+      width: 400px;
+      box-sizing: border-box;
+     text-align: justify;
+  }
+   .contact-box2 li{
+                    list-style: none;
+   }
+  .contact-box3{
+      position: absolute;
+      top: 70px;
+      left: 50%;
+      padding: 80px 40px;
+      height: 550px;
+      width: 400px;
+      box-sizing: border-box;
+      text-align: justify;
+      overflow-x:visible;
+
+    }
+    textarea{
+      resize: none;
+    }
+.submitQueries{
+      font-size: 15px;
+      border: none;
+      outline: none;
+      color: #fff;
+      background: maroon;
+      border-radius: 10px;
+      height: 40px;
+      cursor: pointer;
+      padding: 5px;
+
+}
+
+    .submitQueries:hover
+    {
+      background: #ddd164;
+      color: black;
+    }
+
+    .maroon{
+      height: 10rem;
+      background-color: maroon;
+      color: white;
+      padding: 5px;
+      padding-top: 12px;
+      text-align: center;
+
+    }
+
+    .relative{
+      position: relative;
+    }
